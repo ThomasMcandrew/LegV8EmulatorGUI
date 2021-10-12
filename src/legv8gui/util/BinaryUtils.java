@@ -1,6 +1,16 @@
 package legv8gui.util;
 
 public class BinaryUtils {
+    public static String D2B(int input,int length){
+        return String.format("%1$" + length + "s",DecimalToBinary("",input)).replace(' ','0');
+    }
+    public static String DecimalToBinary(String binaryNum, int input){
+        if(input <= 0){
+            return binaryNum;
+        }else{
+            return DecimalToBinary((input % 2) + binaryNum ,input/2);
+        }
+    }
     public static long parseBinary(String num){
         long mod = 1;
         long total = 0;

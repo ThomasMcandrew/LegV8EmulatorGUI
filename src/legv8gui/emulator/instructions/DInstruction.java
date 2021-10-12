@@ -13,7 +13,14 @@ public abstract class DInstruction extends Instruction {
     }
     @Override
     public String toBinary(String input){
-        return null;
+        input = input.substring(input.indexOf(" "));
+        String[] arg = input.split(",");
+        int n = Integer.parseInt(arg[1].trim().substring(2));
+        int t = Integer.parseInt(arg[0].trim().substring(1));
+        int d = Integer.parseInt(arg[2].trim().substring(1,arg[2].indexOf("]")-1));
+        String output = opcode + BinaryUtils.D2B(d,9) + "00" + BinaryUtils.D2B(n,5) + BinaryUtils.D2B(t,5);
+
+        return output;
     }
 
 

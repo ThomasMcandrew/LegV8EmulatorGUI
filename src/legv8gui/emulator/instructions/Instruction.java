@@ -77,8 +77,8 @@ public abstract class Instruction {
     public static String getBinaryFromText(String input){
         String instruction = null;
         for(int i = 0; i < instructions.length; i++){
-            if(input.toUpperCase(Locale.ROOT).startsWith(instructions[i].getClass().getSimpleName().toUpperCase(Locale.ROOT))){
-                instruction = instructions[i].getBinaryFromText(input);
+            if(input.split(" ")[0].trim().compareTo(instructions[i].name) == 0){
+                instruction = instructions[i].toBinary(input);
             }
         }
         if(instruction == null){
