@@ -8,7 +8,9 @@ import legv8gui.emulator.instructions.b.*;
 import legv8gui.emulator.instructions.cb.*;
 import legv8gui.emulator.instructions.i.*;
 
+import java.security.InvalidParameterException;
 import java.util.Locale;
+import java.util.regex.Pattern;
 
 public abstract class Instruction {
     protected String opcode;
@@ -65,6 +67,10 @@ public abstract class Instruction {
         return opcode;
     }
     public static Instruction findInstruction(String binary){
+        Pattern bin = Pattern.compile("[0|1]{32}");
+        if(binary == null || !bin.matcher(binary).find()){
+            return null;
+        }
         for(int i = 0; i < instructions.length;i++){
             if(binary.startsWith(instructions[i].opcode)){
                 return instructions[i].newInstruction(binary);

@@ -20,6 +20,9 @@ public class Emulator {
     }
     public static void run(String line){
         Instruction i = Instruction.findInstruction(line);
+        if(i == null){
+            return;
+        }
         i.execute();
         Memory.print();
         Stack.print();

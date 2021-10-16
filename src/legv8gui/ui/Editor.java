@@ -16,15 +16,30 @@ import static com.sun.java.accessibility.util.AWTEventMonitor.addActionListener;
 
 public class Editor extends JTextPane {
     private Editor thisEditor;
+    private Timer timer;
+    public void startTimer(){
+        if(!timer.isRunning())
+            timer.start();
+    }
+    public void stopTimer() {
+        if(timer.isRunning())
+            timer.stop();
+    }
+    public boolean timerIsRunning(){
+        return timer.isRunning();
+    }
     public Editor(){
         thisEditor = this;
-        Timer t = new Timer(1000, new ActionListener() {
+        timer = new Timer(1000, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                     SyntaxHighlighter sh = new SyntaxHighlighter(thisEditor);
                     sh.execute();
+                    //find a way to only syntax highlight while selected
+                    System.out.println(getText());
             }
         });
-        t.start();
+
+        timer.start();
     }
 }

@@ -8,8 +8,9 @@ public class MainPanel extends JPanel {
     private JSplitPane splitPane = new JSplitPane();
     private MemoryPanel memoryPanel = new MemoryPanel();
     private StackPanel stackPanel = new StackPanel();
-    private TabController tabController = new TabController();
+    private TabController tabController = TabController.getTabController();
     private Terminal terminal = new Terminal();
+    private ToolBar toolBar = new ToolBar();
     public MainPanel(){
         setLayout(new BorderLayout());
         add(registerPanel, BorderLayout.NORTH);
@@ -18,6 +19,9 @@ public class MainPanel extends JPanel {
         splitPane.setDividerLocation(550);
         splitPane.setTopComponent(tabController);
         splitPane.setBottomComponent(terminal);
+//        JPanel centerPanel = new JPanel();
+//        centerPanel.add(toolBar,BorderLayout.NORTH);
+//        centerPanel.add(splitPane, BorderLayout.SOUTH);
         add(splitPane,BorderLayout.CENTER);
         //add(tabController,BorderLayout.CENTER);
         add(stackPanel, BorderLayout.EAST);
