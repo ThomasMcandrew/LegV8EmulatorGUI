@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bf4fbc1-0672-4c35-a990-d23dd20c81ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LegV8EmulatorGUI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/legv8gui/ui/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/legv8gui/ui/ToolBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Legv8EmulatorGUI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/legv8gui/emulator/Emulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/legv8gui/emulator/Emulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/legv8gui/emulator/instructions/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/legv8gui/emulator/instructions/Instruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/legv8gui/ui/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/legv8gui/ui/Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/legv8gui/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/legv8gui/ui/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/legv8gui/ui/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/legv8gui/ui/MainPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/legv8gui/ui/TabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/legv8gui/ui/TabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/legv8gui/ui/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/legv8gui/ui/Terminal.java" afterDir="false" />
-    </list>
+    <list default="true" id="f5e2af36-df7e-4dfa-86e8-1088a769c26a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,10 +17,15 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
-  <component name="ProjectId" id="1zT7ZjOsX4xfwDRHp2H5Fk5PVgh" />
+  <component name="ProjectId" id="1zbwfp6fh7av2yFBI2tJRAxDYSd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,9 +33,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -66,29 +60,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6bf4fbc1-0672-4c35-a990-d23dd20c81ca" name="Changes" comment="" />
-      <created>1634160285241</created>
+      <changelist id="f5e2af36-df7e-4dfa-86e8-1088a769c26a" name="Changes" comment="" />
+      <created>1634430202930</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1634160285241</updated>
-      <workItem from="1634160289818" duration="13551000" />
-      <workItem from="1634337361290" duration="1178000" />
+      <updated>1634430202930</updated>
+      <workItem from="1634430204229" duration="4836000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

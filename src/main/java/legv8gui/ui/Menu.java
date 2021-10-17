@@ -1,10 +1,17 @@
 package legv8gui.ui;
 
+import com.alee.extended.memorybar.WebMemoryBar;
+import com.alee.laf.menu.WebMenuBar;
+import com.alee.laf.tabbedpane.Tab;
+import legv8gui.compiler.Compiler;
+import legv8gui.emulator.Runner;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
-public class Menu extends JMenuBar {
+public class Menu extends WebMenuBar {
 
     public Menu(){
         initFile();
@@ -26,6 +33,12 @@ public class Menu extends JMenuBar {
         file.add(openFile);
 
         JMenuItem saveFile = new JMenuItem("save file");
+        saveFile.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                TabController.getCurrentEditor().save();
+            }
+        });
         file.add(saveFile);
 
         JMenuItem saveAs = new JMenuItem("save(as) file");
@@ -42,7 +55,11 @@ public class Menu extends JMenuBar {
 
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-
+                File f = TabController.getCurrentEditor().save();
+                File c = Compiler.CompileFile(f);
+                TabController.openFile(c);
+                Runner runner = new Runner(c);
+                runner.execute();
             }
         });
         run.add(runSelected);

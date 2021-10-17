@@ -1,9 +1,12 @@
 package legv8gui.ui;
 
+import com.alee.laf.panel.WebPanel;
+import com.alee.managers.style.StyleId;
+
 import javax.swing.*;
 import java.awt.*;
 
-public class RegisterPanel extends JPanel {
+public class RegisterPanel extends WebPanel {
     public static JLabel X0 = new JLabel();
     public static JLabel X1 = new JLabel();
     public static JLabel X2 = new JLabel();

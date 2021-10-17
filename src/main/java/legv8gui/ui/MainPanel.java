@@ -1,9 +1,11 @@
 package legv8gui.ui;
 
+import com.alee.laf.panel.WebPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
-public class MainPanel extends JPanel {
+public class MainPanel extends WebPanel {
     private RegisterPanel registerPanel = new RegisterPanel();
     private JSplitPane splitPane = new JSplitPane();
     private MemoryPanel memoryPanel = new MemoryPanel();
@@ -16,7 +18,7 @@ public class MainPanel extends JPanel {
         add(registerPanel, BorderLayout.NORTH);
         add(memoryPanel,BorderLayout.WEST);
         splitPane.setOrientation(JSplitPane.VERTICAL_SPLIT);
-        splitPane.setDividerLocation(550);
+        splitPane.setDividerLocation(400);
         splitPane.setTopComponent(tabController);
         splitPane.setBottomComponent(terminal);
 //        JPanel centerPanel = new JPanel();

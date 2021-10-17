@@ -17,8 +17,14 @@ public  abstract class IInstruction extends Instruction {
     }
     @Override
     public String toBinary(String input){
-        return null;
-    }
+        input = input.substring(input.indexOf(" "));
+        String[] arg = input.split(",");
+        int n = Integer.parseInt(arg[1].trim().substring(1));
+        int d = Integer.parseInt(arg[0].trim().substring(1));
+        int i = Integer.parseInt(arg[2].trim().substring(1));
+        String output = opcode + BinaryUtils.D2B(i,12) + BinaryUtils.D2B(n,5) + BinaryUtils.D2B(d,5);
+
+        return output;    }
 
     @Override
     protected void parse() {
