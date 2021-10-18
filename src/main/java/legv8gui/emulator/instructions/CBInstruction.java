@@ -14,7 +14,12 @@ public abstract class CBInstruction extends Instruction {
 
     @Override
     public String toBinary(String input){
-        return null;
+        input = input.substring(input.indexOf(" "));
+        String[] arg = input.split(",");
+        int rt = Integer.parseInt(arg[0].trim());
+        int addr = Integer.parseInt(arg[1].trim());
+
+        return opcode + BinaryUtils.D2B(addr,19) + BinaryUtils.D2B(rt,5);
     }
 
     @Override

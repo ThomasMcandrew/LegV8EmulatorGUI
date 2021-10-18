@@ -14,7 +14,10 @@ public abstract class BInstruction extends Instruction {
 
     @Override
     public String toBinary(String input){
-        return null;
+        input = input.substring(input.indexOf(" "));
+        int addr = Integer.parseInt(input);
+        String output = opcode + BinaryUtils.D2B(addr,26);
+        return output;
     }
 
     @Override

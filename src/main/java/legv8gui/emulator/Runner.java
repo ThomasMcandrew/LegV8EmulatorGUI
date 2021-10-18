@@ -1,6 +1,8 @@
 package legv8gui.emulator;
 
 import legv8gui.emulator.instructions.Instruction;
+import legv8gui.emulator.memory.Memory;
+import legv8gui.emulator.memory.Stack;
 
 import javax.swing.*;
 import java.io.File;
@@ -27,6 +29,8 @@ public class Runner extends SwingWorker {
         for(Emulator.Iterator = 0; Emulator.Iterator < instructions.length;Emulator.Iterator++) {
             try {
                 instructions[Emulator.Iterator].execute();
+                Memory.print();
+                Stack.print();
             }catch(Exception e) {
             }
         }

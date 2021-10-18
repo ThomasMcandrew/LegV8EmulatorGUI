@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5e2af36-df7e-4dfa-86e8-1088a769c26a" name="Changes" comment="" />
+    <list default="true" id="f5e2af36-df7e-4dfa-86e8-1088a769c26a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/BInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/BInstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/CBInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/CBInstruction.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +21,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -34,6 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
@@ -66,10 +75,14 @@
       <option name="presentableId" value="Default" />
       <updated>1634430202930</updated>
       <workItem from="1634430204229" duration="4836000" />
+      <workItem from="1634486493579" duration="3012000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
