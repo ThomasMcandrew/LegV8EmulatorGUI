@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5e2af36-df7e-4dfa-86e8-1088a769c26a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/Debugger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/BInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/BInstruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/CBInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/CBInstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/compiler/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/compiler/Compiler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
