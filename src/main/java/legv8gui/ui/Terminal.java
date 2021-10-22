@@ -40,8 +40,10 @@ public class Terminal extends JTextArea {
                     if(bin == null){
                         bin = "Invalid Command";
                     }
-                    setText(getText() + bin + "\n");
-                    Emulator.run(bin);
+                    if(line.length() > 0) {
+                        setText(getText() + bin + "\n");
+                        Emulator.run(bin);
+                    }
                     setText(getText() + ">>>");
                     setCaretPosition(getText().length());
                 }

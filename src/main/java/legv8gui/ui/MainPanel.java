@@ -1,6 +1,8 @@
 package legv8gui.ui;
 
 import com.alee.laf.panel.WebPanel;
+import com.alee.laf.scroll.WebScrollPane;
+import com.alee.managers.style.StyleId;
 
 import javax.swing.*;
 import java.awt.*;
@@ -20,12 +22,10 @@ public class MainPanel extends WebPanel {
         splitPane.setOrientation(JSplitPane.VERTICAL_SPLIT);
         splitPane.setDividerLocation(400);
         splitPane.setTopComponent(tabController);
-        splitPane.setBottomComponent(terminal);
-//        JPanel centerPanel = new JPanel();
-//        centerPanel.add(toolBar,BorderLayout.NORTH);
-//        centerPanel.add(splitPane, BorderLayout.SOUTH);
+        WebScrollPane scroller = new WebScrollPane(terminal);
+        scroller.setStyleId(StyleId.scrollpaneHovering);
+        splitPane.setBottomComponent(scroller);
         add(splitPane,BorderLayout.CENTER);
-        //add(tabController,BorderLayout.CENTER);
         add(stackPanel, BorderLayout.EAST);
     }
 }

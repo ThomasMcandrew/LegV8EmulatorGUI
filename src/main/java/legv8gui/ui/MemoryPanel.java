@@ -15,8 +15,6 @@ public class MemoryPanel extends WebPanel {
     private static WebScrollPane scrollPane;
     public MemoryPanel() {
         setBorder(BorderFactory.createTitledBorder("Memory"));
-        //setStyleId(StyleId.textpaneDecorated);
-        //textPane.setEditable(false);
         textPane.setEditable(false);
 
         scrollPane = new WebScrollPane(textPane);

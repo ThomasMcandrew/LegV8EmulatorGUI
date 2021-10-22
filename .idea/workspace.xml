@@ -5,9 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5e2af36-df7e-4dfa-86e8-1088a769c26a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/Debugger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/legv8gui/examples/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/legv8gui/ui/Settings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/accessory/InstructionNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/accessory/InstructionNames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/compiler/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/compiler/Compiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/RInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/RInstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/cb/Bcond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/cb/Bcond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/r/LSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/instructions/r/LSL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/memory/Memory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/emulator/memory/Memory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/ui/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/ui/Editor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/ui/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/ui/MainPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/ui/MemoryPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/ui/MemoryPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/ui/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/ui/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/ui/SyntaxHighlighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/ui/SyntaxHighlighter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/ui/TabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/ui/TabController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/ui/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/ui/Terminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/legv8gui/util/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/legv8gui/util/FileUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +31,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -41,7 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CyDate/3_sc_8/Backend/CyDate" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
@@ -74,7 +89,9 @@
       <option name="presentableId" value="Default" />
       <updated>1634430202930</updated>
       <workItem from="1634430204229" duration="4836000" />
-      <workItem from="1634486493579" duration="3012000" />
+      <workItem from="1634486493579" duration="9287000" />
+      <workItem from="1634832317814" duration="5531000" />
+      <workItem from="1634929333296" duration="5375000" />
     </task>
     <servers />
   </component>
@@ -82,6 +99,26 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/legv8gui/compiler/Compiler.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

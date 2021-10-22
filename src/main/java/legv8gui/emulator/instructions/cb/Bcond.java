@@ -1,6 +1,5 @@
 package legv8gui.emulator.instructions.cb;
 
-
 import legv8gui.emulator.Emulator;
 import legv8gui.emulator.instructions.CBInstruction;
 import legv8gui.emulator.instructions.Instruction;

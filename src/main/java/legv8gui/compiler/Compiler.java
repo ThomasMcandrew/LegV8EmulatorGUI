@@ -24,18 +24,14 @@ public class Compiler {
                 Scanner scan = new Scanner(file);
                 int i = 0;
                 while (scan.hasNext()){
-                    String temp = scan.nextLine();
+                    String command = scan.nextLine();
                     HashMap<String, Integer> map = new HashMap<>();
-                    if(Pattern.compile("^[a-z|A-Z]*:").matcher(temp).matches()) {
-                        String place = temp.substring(0,temp.length()-1);
-                        map.put(place,i);
+                    String s =Instruction.getBinaryFromText(command);
+                    if(s == null || s.length() == 0) s = "Error compiling " + command;
+                    if(!(command.startsWith("//")|| command.trim().length() == 0)) {
+                        text += s + "\n";
                     }
-                    else if(Pattern.compile("^[[B|b][|C|c]]").matcher(temp).matches()){
 
-                    }else {
-
-                        text += Instruction.getBinaryFromText(scan.nextLine()) + "\n";
-                    }
                     i++;
                 }
                 return text;

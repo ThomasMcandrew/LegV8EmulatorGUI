@@ -1,6 +1,5 @@
 package legv8gui.emulator.instructions;
 
-
 import legv8gui.util.BinaryUtils;
 
 public abstract class RInstruction extends Instruction  {

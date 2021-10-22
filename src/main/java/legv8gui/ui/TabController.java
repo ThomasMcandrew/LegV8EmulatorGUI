@@ -2,23 +2,12 @@ package legv8gui.ui;
 
 import com.alee.extended.tab.DocumentData;
 import com.alee.extended.tab.WebDocumentPane;
-import com.alee.managers.icon.Icons;
+import com.alee.laf.scroll.WebScrollPane;
+import com.alee.managers.style.StyleId;
 import legv8gui.util.FileUtils;
-
-import javax.swing.*;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.Scanner;
-
-import static com.sun.java.accessibility.util.AWTEventMonitor.addActionListener;
 
 public class TabController extends WebDocumentPane {
     private static TabController tabController;
@@ -29,18 +18,10 @@ public class TabController extends WebDocumentPane {
     }
     private TabController(){
         Editor e = new Editor(FileUtils.getNewFile("new.lv8asm"));
-        DocumentData documentData = new DocumentData("new.lv8asm", "new.lv8asm",e);
+        WebScrollPane scrollPane = new WebScrollPane(e);
+        scrollPane.setStyleId(StyleId.scrollpaneHovering);
+        DocumentData documentData = new DocumentData("new.lv8asm", "new.lv8asm",scrollPane);
         openDocument(documentData);
-//        addChangeListener(new ChangeListener() {
-//            @Override
-//            public void stateChanged(ChangeEvent changeEvent) {
-//                boolean b = false;
-//                for (Component x : getComponents()) {
-//                    ((Editor) x).stopTimer();
-//                }
-//                ((Editor) getSelectedComponent()).startTimer();
-//            }
-//        });
     }
     public static void openFile(File file){
         String text = "";
@@ -51,7 +32,9 @@ public class TabController extends WebDocumentPane {
             }
             Editor e = new Editor(file);
             e.setText(text);
-            DocumentData documentData = new DocumentData(file.getName(),file.getName(),e);
+            WebScrollPane scrollPane = new WebScrollPane(e);
+            scrollPane.setStyleId(StyleId.scrollpaneHovering);
+            DocumentData documentData = new DocumentData(file.getName(),file.getName(),scrollPane);
             tabController.openDocument(documentData);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -62,11 +45,22 @@ public class TabController extends WebDocumentPane {
         int i = tabController.getDocumentsCount();
         String name = i == 0 ? "new.lv8asm" : "new("+i+").lv8asm";
         Editor e = new Editor(FileUtils.getNewFile(name));
-        DocumentData documentData = new DocumentData(name,name,e);
+        WebScrollPane scrollPane = new WebScrollPane(e);
+        scrollPane.setStyleId(StyleId.scrollpaneHovering);
+        DocumentData documentData = new DocumentData(name,name,scrollPane);
         tabController.openDocument(documentData);
     }
+    public static Editor addTab(String filename){
+        int i = tabController.getDocumentsCount();
+        Editor e = new Editor(FileUtils.getNewFile(filename));
+        WebScrollPane scrollPane = new WebScrollPane(e);
+        scrollPane.setStyleId(StyleId.scrollpaneHovering);
+        DocumentData documentData = new DocumentData(filename,filename,scrollPane);
+        tabController.openDocument(documentData);
+        return e;
+    }
     public static Editor getCurrentEditor(){
-        return (Editor) tabController.getSelectedDocument().getComponent();
+        return (Editor) ((WebScrollPane) tabController.getSelectedDocument().getComponent()).getViewport().getView();
     }
 
 }

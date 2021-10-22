@@ -1,6 +1,5 @@
 package legv8gui.emulator.instructions.r;
 
-
 import legv8gui.emulator.instructions.Instruction;
 import legv8gui.emulator.instructions.RInstruction;
 import legv8gui.emulator.memory.Registers;

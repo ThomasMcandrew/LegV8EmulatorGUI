@@ -1,5 +1,7 @@
 package legv8gui.util;
 
+import com.alee.laf.filechooser.WebFileChooser;
+
 import java.io.File;
 
 public class FileUtils {
@@ -12,5 +14,13 @@ public class FileUtils {
     }
     public static File getNewFile(String filename){
         return new File(getTempFileLocation().getAbsolutePath() + File.separator +filename);
+    }
+    public static File OpenFile(){
+        WebFileChooser wfc = new WebFileChooser();
+        try{
+            return wfc.showOpenDialog();
+        }catch(Exception e){
+            return null;
+        }
     }
 }

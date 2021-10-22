@@ -15,8 +15,13 @@ public class SyntaxHighlighter extends SwingWorker {
     private AttributeSet numberStyle = style.addAttribute(style.getEmptySet(), StyleConstants.Foreground, Color.blue);
     private AttributeSet registerStyle = style.addAttribute(style.getEmptySet(), StyleConstants.Foreground, Color.magenta);
     private AttributeSet normalStyle = style.addAttribute(style.getEmptySet(), StyleConstants.Foreground, Color.black);
-    private Pattern instructions = Pattern.compile("add|ADD");
-    private Pattern registers = Pattern.compile("x[0-31]");
+    private Pattern instructions = Pattern.compile("B|BL|" +
+            "B.[A-Z]{2}|CBNZ|CBZ|" +
+            "LDUR|STUR|" +
+            "ADDI|ANDI|EORI|ORRI|SUBI|SUBIS|" +
+            "ADD|AND|BR|EOR|LSL|MUL|ORR|SUB|SUBS");
+
+    private Pattern registers = Pattern.compile("x[0-9]+");
     private Pattern numbers = Pattern.compile("#[0-9]+");
 
     public SyntaxHighlighter(JTextPane text) {
